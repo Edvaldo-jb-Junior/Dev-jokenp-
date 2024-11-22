@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Dev jokepô</title>
+</head>
+
+<body>
+    <main>
+        <img src="./assets/papel.jpg" alt="paper" class="paper-logo">
+        <img src="./assets/tesoura.jpg" alt="scissors-logo" class="scissors-logo">
+        <img src="./assets/hunter.jpg" alt="background-logo" class="background-logo">
+    </main>
+
+    <section>
+        <H1>JoKenPô</H1>
+
+    <div class="conteiner">
+        <button class="stone" onclick="playHuman('stone')">&#x1F44A;</button>
+        <button class="paper" onclick="playHuman('paper')">&#x1F590;</button>
+        <button class="scissors" onclick="playHuman('scissors')">&#x270C;</button>
+    </div>
+        <p class="resultes"></p>
+        <p class="your-score">Sua pontuação:<span class="human-score">0</span></p>
+        <p class="opponents-score">Pontuação adversário:<span class="machine-score">0</span></p>
+    </section>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
