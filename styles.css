@@ -4,20 +4,23 @@
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
 }
-
+body{
+    width: 100vw;
+    height: 100vh;
+}
 .background-logo{
-    width: 100%;
-    height: 1000px;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
     position: fixed;
 }
 
 section{
-    width: 30%;
-    height: 55%;
+    width: 30vw;
+    height: 80vh;
     padding: 20px;
     background: white ;
-    margin: 80px auto 0;
+    margin: 40px 0 0 -230px;
     position: absolute;
     left: 700px;
     display: flex;
@@ -27,25 +30,25 @@ section{
 }
 
 h1{
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 700px; 
     padding-bottom: 20px;
 }
 .stone{
     background-color:  rgb(36, 15, 112);
-    font-size: 70px;
+    font-size: 60px;
     margin-right: 20px;
     
 }
 .paper{
     background-color:  rgb(209, 102, 31);
-    font-size: 70px;
+    font-size: 60px;
     margin-right: 20px;
     
 }
 .scissors{
     background-color:  rgb(7, 54, 7);
-    font-size: 70px;
+    font-size: 60px;
     width: 90px;
 }
 button{
@@ -67,16 +70,15 @@ p{
 .paper-logo{
     z-index: 1;
     position: absolute;
-    width: 32%;
-    height: 40%;
+    width: 32vw;
+    height: 40vh;
     margin-top: 20px;
 }
 .scissors-logo{
     position: absolute;
-    z-index: 1;
-    left: 1320px;
-    margin: 40px;
-    width: 700px;
+    z-index: 0;
+    margin: 40px 0 0 920px;
+    width: 30vw;
 }
 .your-score span{
     color: rgb(2, 99, 102);
@@ -85,25 +87,96 @@ p{
     color: rgb(209, 114, 24);
 }
 
-@media (max-width: 1000px){
-    body{
+@media (max-width: 1100px){
+    .background-logo{
         width: 100vw;
         height: 100vh;
     }
-    .background-logo{
-        width: 100%;
-        height: 100%;
-    }
     section{
-        width: 90%;
-        height: 60%;
-        left: 25px;
-        margin-top: 15px;
+        width: 40vw;
+        height: 40vh;
+        margin: 100px 0 0 -400px;
     }
     .paper-logo{
-        display:none;
+        width: 28vw;
+    }
+    .scissors-logo{
+        width: 28vw;
+        margin: 200px 0 0 730px
+    }
+}
+@media(max-width: 920px){
+    section{
+        width: 90vw;
+        height: 35vh;
+        margin: 30px 0 0 -650px;
+    }
+    .background-logo{
+        width: 100vw;
+        height: 100vh;
+    }
+    .paper-logo{
+        margin: 520px 0 0 30px;
+        width: 25vw;
+        height: 20vh;
+    }
+    .scissors-logo{
+        margin: 550px 0 0 600px
+    }
+}
+@media(max-width: 550px){
+    .background-logo{
+        width: 100vw;
+        height: 100vh;
+    }
+    .paper-logo{
+        display: none;
     }
     .scissors-logo{
         display: none;
+    }
+    section{
+        height: 50vh;
+        margin: 20px 0 0 -670px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .paper{
+        font-size: 40px;
+    }
+    .scissors{
+        font-size: 40px;
+        width: 60px;
+    }
+    .stone{
+        font-size: 40px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+@media(max-width: 440px){
+    section{
+        margin-left: -678px;
+    }
+    h1{
+        font-size: 70px;
+    }
+}
+@media(max-width: 380px){
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+@media(max-width: 350px){
+    p{ 
+        font-size: 25px;
+    }
+    h1{
+        font-size: 60px;
     }
 }
