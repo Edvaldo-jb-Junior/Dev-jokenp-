@@ -13,22 +13,34 @@
 
 <body>
     <main>
-        <img src="./assets/papel.jpg" alt="paper" class="paper-logo">
-        <img src="./assets/tesoura.jpg" alt="scissors-logo" class="scissors-logo">
-        <img src="./assets/hunter.jpg" alt="background-logo" class="background-logo">
+       
+        <img src="./assets/jokenpo.jpg" alt="background-logo" class="background-logo">
+    
     </main>
 
-    <section>
+    <section class="hidden">
         <H1>JoKenPô</H1>
 
     <div class="conteiner">
-        <button class="stone" onclick="playHuman('stone')">&#x1F44A;</button>
-        <button class="paper" onclick="playHuman('paper')">&#x1F590;</button>
-        <button class="scissors" onclick="playHuman('scissors')">&#x270C;</button>
+
+        <div class="hidden">
+            <button id="stone" class="avatar" onclick="playHuman('stone')">&#x1F44A;</button>
+        </div>
+        
+        <div class="hidden">
+            <button id="paper" class="avatar" onclick="playHuman('paper')">&#x1F590;</button>
+        </div>
+        
+        <div class="hidden">
+        <button id="scissors" class="avatar"  onclick="playHuman('scissors')">&#x270C;</button>
+        </div>
+        
     </div>
+
         <p class="resultes"></p>
         <p class="your-score">Sua pontuação:<span class="human-score">0</span></p>
         <p class="opponents-score">Pontuação adversário:<span class="machine-score">0</span></p>
+    
     </section>
 
 </body>
